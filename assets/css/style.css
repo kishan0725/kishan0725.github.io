@@ -116,6 +116,11 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 
+#header .views {
+  text-align: center;
+  margin-top: 15px;
+}
+
 #main {
   margin-left: 300px;
 }
