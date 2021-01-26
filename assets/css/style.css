@@ -242,7 +242,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero h1 {
   margin: 0 0 10px 0;
   font-size: 64px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 56px;
   color: #fff;
 }
@@ -283,6 +283,12 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
+  }
+  #hero p {
+    color: #fff;
+    margin-bottom: 50px;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
   }
 }
 
