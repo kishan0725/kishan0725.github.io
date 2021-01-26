@@ -348,6 +348,8 @@ section {
 
 .section-bg {
   background: #f5f8fd;
+  transition: all 0.5s linear 0s;
+  -webkit-transition: all .5s linear 0s;
 }
 
 .section-title {
@@ -480,6 +482,8 @@ section {
 }
 
 .dark-theme-resume .resume-item::before {
+  transition: all 0.5s linear 0s;
+  -webkit-transition: all .5s linear 0s;
   background: #040b14 !important;
 }
 
@@ -533,6 +537,8 @@ section {
 }
 
 .dark-theme-portfolio #portfolio-flters {
+  transition: all 0.5s linear 0s;
+  -webkit-transition: all .5s linear 0s;
   background: #212431 !important;
 }
 
@@ -874,8 +880,10 @@ section {
 }
 
 .dark-theme-contact .info {
+  transition: all 0.5s linear 0s;
+  -webkit-transition: all .5s linear 0s;
   background: #040b14 !important;
-  box-shadow: 0 0 24px 0 rgba(87, 87, 87, 0.12) !important;
+  box-shadow: 0 0 24px 0 #404244;
 }
 
 .dark-theme-contact .info h4 {
@@ -887,8 +895,10 @@ section {
 }
 
 .dark-theme-contact .php-email-form {
+  transition: all 0.5s linear 0s;
+  -webkit-transition: all .5s linear 0s;
   background: #040b14 !important;
-  box-shadow: 0 0 24px 0 rgba(87, 87, 87, 0.12) !important;
+  box-shadow: 0 0 24px 0 #404244;
 }
 
 @-webkit-keyframes animate-loading {
