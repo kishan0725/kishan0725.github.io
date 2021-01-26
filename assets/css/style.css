@@ -4,12 +4,15 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
+  transition: all 0.5s linear 0s;
+  -webkit-transition: all .5s linear 0s;
 }
 
 .body-dark-theme {
   color:white;
   background: #040b14;
-  transition: all 0.5s;
+  transition: all 0.5s linear 0s;
+  -webkit-transition: all .3s linear 0s;
 }
 
 a {
