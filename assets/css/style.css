@@ -490,6 +490,8 @@ section {
 .dark-theme-resume .resume-item h5 {
   color: #040b14;
   background: #617a9a !important;
+  transition: all 0.5s linear 0s;
+  -webkit-transition: all .5s linear 0s;
 }
 
 .dark-theme-resume .resume-item h4 {
