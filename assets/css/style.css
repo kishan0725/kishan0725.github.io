@@ -1,6 +1,11 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+* {
+  will-change: transition;
+  transition: translateZ(0);
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
