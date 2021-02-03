@@ -733,7 +733,7 @@ section {
   transition: all 0.3s ease-in-out;
 }
 
-.contact .info h4 {
+.contact .info h3 {
   padding: 0 0 0 60px;
   font-size: 22px;
   font-weight: 600;
@@ -888,7 +888,7 @@ section {
   box-shadow: 0 0 24px 0 #404244;
 }
 
-.dark-theme-contact .info h4 {
+.dark-theme-contact .info h3 {
   color: whitesmoke !important;
 }
 
@@ -1050,39 +1050,5 @@ section {
   .portfolio-details .portfolio-info {
     position: static;
     margin-top: 30px;
-  }
-}
-
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
-#footer {
-  padding: 15px;
-  color: #f4f6fd;
-  font-size: 14px;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 300px;
-  z-index: 9999;
-  background: #040b14;
-}
-
-#footer .copyright {
-  text-align: center;
-}
-
-#footer .credits {
-  padding-top: 5px;
-  text-align: center;
-  font-size: 13px;
-  color: #eaebf0;
-}
-
-@media (max-width: 1199px) {
-  #footer {
-    position: static;
-    width: auto;
-    padding-right: 20px 15px;
   }
 }
