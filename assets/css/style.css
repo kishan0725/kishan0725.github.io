@@ -2,11 +2,61 @@
 # General
 --------------------------------------------------------------*/
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
   transition: all 0.5s linear 0s;
   -webkit-transition: all .5s linear 0s;
+}
+
+.nav-menu {
+  margin-top: 20px;;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  width: 50px;
+  height: 24px;
+  background-color:#ffffff59;
+  display: flex;
+  border-radius:50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px !important;
+  position: relative;
+  transform: scale(1.5);
+}
+
+.ball {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+/*  target the elemenent after the label*/
+.checkbox:checked + .label .ball{
+  transform: translateX(25px);
+}
+
+.bxs-moon {
+  color: pink;
+}
+
+.bxs-sun {
+  color: yellow;
 }
 
 .body-dark-theme {
@@ -146,6 +196,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .theme-toggler {
   padding-top: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .theme-toggler * {

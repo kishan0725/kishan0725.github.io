@@ -4,21 +4,24 @@
   // Handling themes
   if(localStorage.getItem('theme')===null) {
     localStorage.setItem('theme', 'light');
+    $('.checkbox').prop('checked', false);
     enableDarkThemeMenu();
   }
   else {
     getAndSetTheme();
   }
   
-  $('.theme-toggler').on('click', function() {
+  $('.checkbox').on('click', function() {
     toggleTheme();
   });
 
   function getAndSetTheme() {
     if(localStorage.getItem('theme')=='light') {
+      $('.checkbox').prop('checked', false);
       enableDarkThemeMenu();
     }
     else {
+      $('.checkbox').prop('checked', true);
       enableLightThemeMenu();
       enableTheme();
     }
