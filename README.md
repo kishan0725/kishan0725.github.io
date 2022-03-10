@@ -1,5 +1,5 @@
 # Portfolio
 
-https://kishanlal.tech/
+https://kishanlal.dev/
 
 https://kishan0725.github.io/
