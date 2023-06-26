@@ -139,6 +139,12 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   width: 120px;
   border: 8px solid #2c2f3f;
+  background-color: #f5f8fd;
+}
+#header .dark-theme-profile img {
+  transition: all 0.5s linear 0s;
+  -webkit-transition: all .5s linear 0s;
+  background: #212431 !important;
 }
 
 #header .profile h1 {
@@ -448,6 +454,11 @@ section {
 
 .dark-theme-about h3{
   color: #468bda !important;
+}
+
+.about .container .row {
+  display: flex;
+  align-items: center;
 }
 
 .about .content ul {

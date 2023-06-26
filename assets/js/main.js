@@ -52,6 +52,7 @@
 
   function enableTheme() {
     $('body').toggleClass('body-dark-theme', 1000);
+    $('.profile').toggleClass('dark-theme-profile', 1000);
     $('#portfolio').toggleClass('section-bg', 1000);
     $('.section-title').toggleClass('dark-theme-section', 1000);
     $('.about .content').toggleClass('dark-theme-about', 1000);
