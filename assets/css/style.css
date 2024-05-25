@@ -322,7 +322,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/kishan-retro.webp") 150px -600px;
+  background: url("../img/IMG_1776.jpg") 300px -250px;
   background-size: cover;
 }
 
@@ -376,7 +376,7 @@ h1, h2, h3, h4, h5, h6 {
   #hero {
     width: 100%;
     height: 100vh;
-    background: url("../img/kishan-retro.webp") top center;
+    background: url("../img/IMG_1732.jpg") top center;
     background-size: cover;
   }
   
