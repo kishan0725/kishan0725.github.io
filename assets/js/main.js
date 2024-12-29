@@ -55,7 +55,7 @@
     $('.profile').toggleClass('dark-theme-profile', 1000);
     $('#portfolio').toggleClass('section-bg', 1000);
     $('.section-title').toggleClass('dark-theme-section', 1000);
-    $('.about .content').toggleClass('dark-theme-about', 1000);
+    $('.about').toggleClass('dark-theme-about', 1000);
     $('.projects').toggleClass('dark-theme-project', 1000);
     $('.portfolio').toggleClass('dark-theme-portfolio', 1000);
     $('.resume').toggleClass('dark-theme-resume', 1000);
@@ -240,33 +240,50 @@
     return regex.test(email);
   }
 
-  $("#sendMessage").on("click", function() {
+  $("#sendMessage").on("click", function(e) {
+      e.preventDefault(); // Prevent form submission
       var name = $("#name").val();
       var email = $("#email").val();
       var subject = $("#subject").val();
-      var message_area = $("#message-area").val();
+      var message_area = $("#message").val();
+      console.log(name);
       if(!name || !email || !subject || !message_area) {
-        alert('One or more invalid fields found! Please enter all the field and submit.');
-        return false;
+        $('.error-message').html('Please fill in all required fields').show();
+        return;
       }
-      else if(!isEmail(email)) {
-        alert('Invalid email format');
+      if(!isEmail(email)) {
+        $('.error-message').html('Please enter a valid email address').show();
+        return;
       }
-      else {
-        $.ajax({
-          url: "https://formspree.io/f/mgepdnbo", 
-          method: "POST",
-          data: {
-            name: name,
-            email: email,
-            subject: subject,
-            message: message_area
-          },
-          dataType: "json"
+
+      $('.loading').show();
+      $('.error-message').hide();
+      $('.sent-message').hide();
+
+      $.ajax({
+        url: "https://formspree.io/f/mgepdnbo", 
+        method: "POST",
+        data: {
+          name: name,
+          email: email,
+          subject: subject,
+          message: message_area
+        },
+        dataType: "json"
+      })
+      .done(function() {
+        $('.loading').hide();
+        $('.sent-message').show();
+        // Clear form
+        $('#name').val('');
+        $('#email').val('');
+        $('#subject').val('');
+        $('#message').val('');
+      })
+      .fail(function(err) {
+        $('.loading').hide();
+        $('.error-message').html('There was an error sending your message. Please try again.').show();
       });
-      alert('Details submitted successfully!');
-      return false;
-      }
   });
 
   // Init AOS
