@@ -186,22 +186,32 @@
 
   // Porfolio isotope and filter
   $(window).on('load', function() {
-    var portfolioIsotope = $('.portfolio-container').isotope({
-      itemSelector: '.portfolio-item',
-      layoutMode: 'fitRows'
-    });
-
-    $('#portfolio-flters li').on('click', function() {
-      $("#portfolio-flters li").removeClass('filter-active');
-      $(this).addClass('filter-active');
-
-      portfolioIsotope.isotope({
-        filter: $(this).data('filter')
+    // Wait for all images to load
+    var imgLoad = imagesLoaded('.portfolio-container');
+    
+    imgLoad.on('always', function() {
+      // Initialize Isotope after all images are loaded
+      var portfolioIsotope = $('.portfolio-container').isotope({
+        itemSelector: '.portfolio-item',
+        layoutMode: 'fitRows'
       });
-      aos_init();
-    });
 
-    $('li[data-filter=".filter-award"]').click();
+      $('#portfolio-flters li').on('click', function() {
+        $("#portfolio-flters li").removeClass('filter-active');
+        $(this).addClass('filter-active');
+
+        portfolioIsotope.isotope({
+          filter: $(this).data('filter')
+        });
+        aos_init();
+      });
+
+      // Ensure layout is correct on initial load
+      setTimeout(function() {
+        portfolioIsotope.isotope('layout');
+        $('li[data-filter=".filter-award"]').click();
+      }, 100);
+    });
 
     // Initiate venobox (lightbox feature used in portofilo)
     $(document).ready(function() {
