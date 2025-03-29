@@ -816,6 +816,60 @@ section {
     grid-template-columns: 1fr;
     gap: 30px;
   }
+  
+  .resume .resume-item {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .resume .resume-item h4 {
+    font-size: 18px;
+  }
+  
+  .resume .resume-item h5 {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+  
+  .resume .resume-item ul li {
+    font-size: 14px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .resume .resume-item embed {
+    height: 300px;
+  }
+  
+  .resume .resume-item img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+  
+  .resume .resume-title {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .resume .resume-item {
+    padding: 15px;
+  }
+  
+  .resume .resume-item embed {
+    height: 250px;
+  }
+  
+  .resume .resume-item h4 {
+    font-size: 16px;
+  }
+  
+  .resume .resume-item h5 {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
 }
 
 .resume .resume-title {
