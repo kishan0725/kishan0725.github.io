@@ -138,7 +138,7 @@
         <div class="row">
           <div class="col-lg-4 profile-image" data-aos="fade-right">
             <div class="image-container">
-              <img loading=lazy src="assets/img/new-intro.jpg" class="img-fluid rounded-3" alt="" height="350px"
+              <img loading=lazy src="assets/img/caricature.png" class="img-fluid rounded-3" alt="" height="350px"
                 width="350px">
             </div>
           </div>
@@ -153,18 +153,12 @@
             </div>
 
             <div class="bio-text">
-              <p class="intro">Hello! I'm <span class="highlight">Kishan</span>, a passionate Software Engineer with a
-                knack for crafting innovative solutions. Originally from Madurai, India, I graduated with a degree in
-                Information Technology in 2021 and have since been at the forefront of merging technology with
-                creativity.</p>
+              <p class="intro">Hello! I'm <span class="highlight">Kishan</span>, a Lead Engineer at Presidio with 4+ years of experience in Backend Development, Generative AI, and Web Applications. I lead the Innovation (R&D) team, building autonomous AI agents, developer tools, and enterprise platforms that bring AI into real workflows.</p>
 
-              <p class="philosophy">My approach combines technical expertise with innovative problem-solving. I thrive
-                in collaborative environments where I can push boundaries and create impactful solutions that make a
-                difference.</p>
+              <p class="philosophy">A big part of my work involves collaborating with different practices across the organization, understanding their pain points and problem statements, and figuring out how AI can solve them. I also enjoy helping teams build AI skills and get comfortable adopting these capabilities in their day-to-day work.</p>
 
-              <p class="education">I completed my B.Tech in IT from <a href="https://vcet.ac.in" target="_blank"
-                  rel="noopener" class="link-animated">VCET</a>, Coimbatore, and currently serve as a Lead Engineer at
-                Presidio.</p>
+              <p class="education">I hold a B.Tech in IT from <a href="https://vcet.ac.in" target="_blank"
+                  rel="noopener" class="link-animated">VCET</a>, Madurai, and I'm currently based in Coimbatore. Along the way, I've won multiple company hackathons and was recognized as <strong>Innovator of the Year 2025</strong>.</p>
             </div>
 
             <div class="info-grid">
@@ -901,37 +895,47 @@
 
               <h5 class="sub-section">Innovation Team</h5>
               <ul>
-                <li>Tech Lead for HAI (HumanAI)</li>
-                <li>Route 66 – Developing an AI-powered platform for building and deploying custom AI assistants. This
-                  intuitive platform enables non-technical users to configure specialized AI assistants/agents with
-                  multi-model provider, and extensible tool connectors (MCP). Built with TypeScript microservices
-                  architecture, React/Next.js UI, and real-time interactions for seamless assistant management and
-                  deployment.</li>
-                <li>HAI CRE Agent (Code Reverse Engineering) - Contributed to the development and AWS Marketplace
-                  deployment of an autonomous agent that analyzes legacy codebases to uncover architecture,
-                  dependencies, and technical debt through automated reverse-engineering and dependency graph analysis.
-                </li>
-                <li>HAI SEAL (Self-Evolving Application Lifecycle) - Developing an AI-powered platform for teams of
-                  autonomous Agents that asynchronously analyzes and evolves applications in the cloud through
-                  autonomous monitoring, intelligent issue resolution, and continuous business-technical alignment.</li>
-                <li>HAI Framework – Building a modular, TypeScript-based agentic framework that streamlines the
-                  development and orchestration of autonomous AI agents by integrating multi-LLM support, a
-                  comprehensive tool system, adaptive learning mechanisms, and robust performance monitoring.</li>
-                <li>HAI Modernize
+                <li>Tech Lead for Innovation & HAI (HumanAI)</li>
+                <li>Regularly collaborate with multiple practices across the organization to understand their pain points and problem statements, and work on bringing AI-driven solutions to address them. Also focused on enabling teams with AI skills and helping the organization adopt AI capabilities effectively.</li>
+
+                <li>AI Studio – An enterprise platform for building and deploying custom AI assistants and agents, widely used by non-technical teams across the organization, especially the Networks and Platforms practices. My role involves unblocking the team on technical challenges, architecting solutions, sourcing ideas from cross-practice discussions, and contributing hands-on to key features.
                   <ul>
-                    <li>MonoToMicro Workflow - Developed an AI-powered workflow system that modernizes legacy enterprise
-                      monolithic applications into modern microservices.</li>
-                    <li>HAI RapidUI - Created autonomous AI agents that generate complete UI applications from UX
-                      wireframes. Features: Multi-framework support (React, Angular, Vue, and Next.js), AI-powered UI
-                      validation, self-healing with retry mechanisms, Seamless backend integration via Swagger docs,
-                      etc.</li>
+                    <li>DeepResearch – Architected a deep web research system (using parallel.ai to fetch and synthesize information from multiple sources simultaneously) that enables agents to perform deep, comprehensive research</li>
+                    <li>Agent Skills Integration – Laid the foundation for a skills-based agent architecture, inspired by an Anthropic engineering blog, enabling agents to dynamically load and execute specialized capabilities</li>
+                    <li>Long-term Memory – One of the primary developers. Forked from the openmemory repo, added multi-user isolation, pgvector support, and offline memory consolidation. Published as a standalone npm package under Presidio: <a href="https://www.npmjs.com/package/@presidio-dev/agent-memory" target="_blank" rel="noopener">@presidio-dev/agent-memory</a></li>
+                    <li>Code Execution – Designed the architecture and laid the foundation for a code execution capability that orchestrates MCP tools, similar to how Anthropic's Code Mode MCP works</li>
+                    <li>MCP Ecosystem – Leading the Modern Networks team in building MCP servers for the networks and other practices, which plug directly into AI Studio</li>
+                    <li>Deckster Migration – Helped migrate Deckster (a pre-sales tool that pulls historic engagement and customer data from Presidio's SharePoint) into AI Studio as a Deckster MCP</li>
+                    <li>Modern Platforms collaboration – Currently working with the Modern Platforms practice on proposal generation and migration wave planning (master server inventory, TCO calculation), which will be surfaced through AI Studio</li>
                   </ul>
                 </li>
-                <br>
-                <img src="./assets/img/portfolio/innovator-award.JPEG" width="500" height="330">
-                <br>
-                <p>Received the Innovator of the Year 2025 Pinnacle Award for leading AI initiatives at Presidio,
-                  driving AI-led innovation and modernization of enterprise applications.</p>
+
+                <li>Oswald – Architected and developed an autonomous AI-powered code review agent that integrates with GitLab and GitHub to automatically review pull requests, provide inline feedback, and engage in review discussions. Features a skills-based extensible architecture, multi-LLM provider support (Anthropic, OpenAI, Local models), and support for custom project rules and guidelines.</li>
+
+                <li>HAI Framework – Ideated and built an in-house TypeScript-based agentic framework that streamlines the development and orchestration of autonomous AI agents with multi-LLM support, a comprehensive tool system, adaptive learning mechanisms, and robust performance monitoring. Now powers multiple tools we develop in Presidio and has been adopted in customer solutions as well.</li>
+
+                <li>AWS Marketplace CRE Agent (Code Reverse Engineering) – Created an autonomous agent that analyzes entire codebases across multiple dimensions (architecture, dependencies, technical debt). Published as an AWS Marketplace AI agent offering, establishing Presidio as an <b>AWS Marketplace launch partner.</b></li>
+
+                <li>HAI SEAL (Self-Evolving Application Lifecycle) – Developing an AI-powered platform where teams of autonomous agents asynchronously analyze and evolve applications in the cloud through autonomous monitoring, intelligent issue resolution, and continuous business-technical alignment. Currently being explored to automate the code-related audit process for customer engagements.</li>
+
+                <li>HAI Modernize
+                  <ul>
+                    <li>MonoToMicro Workflow – Developed an AI-powered workflow system that modernizes legacy enterprise monolithic applications into modern microservices.</li>
+                    <li>HAI RapidUI – Created autonomous AI agents that generate complete UI applications from UX wireframes. Supports React, Angular, Vue, and Next.js with AI-powered UI validation, self-healing retry mechanisms, and seamless backend integration via Swagger docs.</li>
+                  </ul>
+                </li>
+
+                <li>Agentic Enablement – Created a 6-week curriculum for agentic AI enablement across the organization, complete with quizzes and hands-on exercises. Still a go-to resource for anyone in the organization getting started with AI agents.</li>
+
+                <li>Mentoring – Actively mentoring 5 team members, helping them set career goals and enabling them to write and publish technical blogs.</li>
+
+                <li>Hiring – Part of the innovation team's hiring process, having interviewed 8 candidates so far.</li>
+              </ul>
+              <br>
+              <img src="./assets/img/portfolio/innovator-award.JPEG" width="500" height="330">
+              <br>
+              <p>Received the Innovator of the Year 2025 Pinnacle Award for leading AI initiatives at Presidio,
+                driving AI-led innovation and modernization of enterprise applications.</p>
             </div>
 
             <div class="resume-item">
